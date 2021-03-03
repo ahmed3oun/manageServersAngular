@@ -3,6 +3,7 @@
     <li
       class="list-group-item"
       [ngClass]="getClass(itemServer.status)"
+      appCustomDir
       *ngFor="let itemServer of listServeur"
     >
       {{ itemServer.name }} | {{ itemServer.type }} | {{ itemServer.starDate }}
